@@ -27,9 +27,11 @@
 </template>
 
 <script>
+import { i18n } from '#/common';
+
 const data = {
   version: browser.runtime.getManifest().version,
-  language: navigator.language,
+  language: i18n('_locale'),
 };
 
 export default {

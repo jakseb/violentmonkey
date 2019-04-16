@@ -1,3 +1,9 @@
+_locale:
+  description: >-
+    Language tag for this translation file. The same as the containing
+    directory's name except that underscores, if any, should be changed to
+    hyphens, e.g. en-US instead of en_US.
+  message: sk
 anchorAuthor:
   description: Author shown on about tab.
   message: '<a href=mailto:i@gerald.top>Gerald</a>'
