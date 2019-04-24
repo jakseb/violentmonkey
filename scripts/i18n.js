@@ -131,8 +131,8 @@ class Locales {
 function extract(options) {
   const keys = new Set();
   const patterns = {
-    default: ['\\b(?:i18n\\(\'|i18n-key=")(\\w+)[\'"]', 1],
-    json: ['__MSG_(\\w+)__', 1],
+    default: ['\\b(?:i18n\\(\'|i18n-key=")((?!@@)[\\w@]+)[\'"]', 1],
+    json: ['__MSG_((?!@@)[\\w@]+)__', 1],
   };
   const types = {
     '.js': 'default',
